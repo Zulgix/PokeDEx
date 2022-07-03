@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import TypesView from "./TypesView";
 import commonClasses from "../UI/classes";
 import AbilitiesView from "./AbilitiesView";
