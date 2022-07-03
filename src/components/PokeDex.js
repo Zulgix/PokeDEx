@@ -40,6 +40,7 @@ const PokeDex = ({}) => {
         justifyContent="center"
         alignItems="center"
         className="textfeildContainer"
+        overflow="auto"
       >
         <Grid item>
           <form onSubmit={handleSubmit}>
@@ -55,9 +56,33 @@ const PokeDex = ({}) => {
           </form>
         </Grid>
       </Grid>
-      <Grid container item spacing={2} className={classes.view_grid}>
-        <Screen rightClick={rightClick} leftClick={leftClick} />
-        <InfoCard />
+      <Grid
+        container
+        item
+        justifyContent="center"
+        alignItems="center"
+        className={classes.view_grid}
+      >
+        <Grid
+          container
+          justifyContent="flex-end"
+          alignItems="center"
+          item
+          xs={12}
+          md={6}
+        >
+          <Screen rightClick={rightClick} leftClick={leftClick} />
+        </Grid>
+        <Grid
+          container
+          item
+          justifyContent="flex-start"
+          alignItems="center"
+          xs={12}
+          md={6}
+        >
+          <InfoCard />
+        </Grid>
       </Grid>
     </>
   );
